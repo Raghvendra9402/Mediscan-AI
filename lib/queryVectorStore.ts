@@ -1,4 +1,3 @@
-import { GoogleGenAI } from "@google/genai";
 import { pcIndex } from "./pinecone";
 import { generateEmbedding } from "./generateEmbedding";
 

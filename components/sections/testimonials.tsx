@@ -32,7 +32,7 @@ export const Testimonials = () => {
               </div>
               <p className="text-gray-500">
                 &quot;MediScan AI helped me understand my lab results when I was
-                too anxious to wait for my doctor's appointment. The
+                too anxious to wait for my doctor&apos;s appointment. The
                 explanations were clear and reassuring.&quot;
               </p>
             </div>
