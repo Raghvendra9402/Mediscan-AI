@@ -1,6 +1,7 @@
 import { UploadReportButton } from "@/components/shared/upload-report-button";
 import { Button } from "@/components/ui/button";
 import { currentUser } from "@clerk/nextjs/server";
+import Image from "next/image";
 
 import Link from "next/link";
 
@@ -39,10 +40,10 @@ export const Hero = async () => {
           </div>
           <div className="flex justify-center">
             <div className="relative w-full max-w-[500px] aspect-video rounded-xl overflow-hidden shadow-2xl">
-              <img
+              <Image
                 src="/ai-doctor.png"
                 alt="AI Doctor analyzing medical report"
-                className="fill w-full h-full"
+                fill
               />
               <div className="absolute inset-0 bg-gradient-to-tr from-black/20 to-transparent"></div>
             </div>

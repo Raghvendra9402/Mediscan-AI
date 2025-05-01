@@ -2,8 +2,6 @@ import { GoogleGenAI } from "@google/genai";
 import { pcIndex } from "./pinecone";
 import { generateEmbedding } from "./generateEmbedding";
 
-const ai = new GoogleGenAI({ apiKey: process.env.GEMINI_API_KEY! });
-
 export async function queryVectorStore(searchQuery: string): Promise<string> {
   const embeddings = await generateEmbedding(searchQuery);
   if (!embeddings) {

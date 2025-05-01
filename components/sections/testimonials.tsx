@@ -31,9 +31,9 @@ export const Testimonials = () => {
                 ))}
               </div>
               <p className="text-gray-500">
-                "MediScan AI helped me understand my lab results when I was too
-                anxious to wait for my doctor's appointment. The explanations
-                were clear and reassuring."
+                &quot;MediScan AI helped me understand my lab results when I was
+                too anxious to wait for my doctor's appointment. The
+                explanations were clear and reassuring.&quot;
               </p>
             </div>
             <div className="flex items-center space-x-4">
@@ -41,7 +41,7 @@ export const Testimonials = () => {
                 <div className="h-8 w-8 rounded-full bg-gray-300"></div>
               </div>
               <div>
-                <p className="text-sm font-medium">Sarah Johnson</p>
+                <p className="text-sm font-medium">Rajesh</p>
                 <p className="text-sm text-gray-500">Patient</p>
               </div>
             </div>
@@ -61,9 +61,9 @@ export const Testimonials = () => {
                 ))}
               </div>
               <p className="text-gray-500">
-                "As someone with a chronic condition, I need to review my
+                &quot;As someone with a chronic condition, I need to review my
                 reports frequently. This AI tool has made it so much easier to
-                track my progress and understand changes."
+                track my progress and understand changes.&quot;
               </p>
             </div>
             <div className="flex items-center space-x-4">
@@ -71,7 +71,7 @@ export const Testimonials = () => {
                 <div className="h-8 w-8 rounded-full bg-gray-300"></div>
               </div>
               <div>
-                <p className="text-sm font-medium">Michael Chen</p>
+                <p className="text-sm font-medium">Kunal pandey</p>
                 <p className="text-sm text-gray-500">Regular User</p>
               </div>
             </div>
@@ -91,9 +91,9 @@ export const Testimonials = () => {
                 ))}
               </div>
               <p className="text-gray-500">
-                "I was overwhelmed by my medical reports after surgery. MediScan
-                AI broke everything down in simple terms and helped me ask
-                better questions during my follow-up appointment."
+                &quot;I was overwhelmed by my medical reports after surgery.
+                MediScan AI broke everything down in simple terms and helped me
+                ask better questions during my follow-up appointment.&quot;
               </p>
             </div>
             <div className="flex items-center space-x-4">
@@ -101,7 +101,7 @@ export const Testimonials = () => {
                 <div className="h-8 w-8 rounded-full bg-gray-300"></div>
               </div>
               <div>
-                <p className="text-sm font-medium">Emily Rodriguez</p>
+                <p className="text-sm font-medium">Rahul shroff</p>
                 <p className="text-sm text-gray-500">Post-surgery Patient</p>
               </div>
             </div>

@@ -94,6 +94,7 @@ export function UploadReportContent() {
       }
     } catch (error) {
       toast.error("Something went wrong", { id: toastId });
+      console.log(error);
     }
   };
 

@@ -23,18 +23,10 @@ import ReactMarkdown from "react-markdown";
 export default function Chat() {
   const { reportData } = useReportStore();
 
-  const {
-    messages,
-    input,
-    handleInputChange,
-    handleSubmit,
-    status,
-    error,
-    setMessages,
-  } = useChat();
+  const { messages, input, handleInputChange, handleSubmit, status, error } =
+    useChat();
 
   const [showSidebar, setShowSidebar] = useState(true);
-  const [isLoading, setIsLoading] = useState(false);
   const messagesEndRef = useRef<HTMLDivElement>(null);
   useEffect(() => {
     messagesEndRef.current?.scrollIntoView({ behavior: "smooth" });
@@ -42,7 +34,6 @@ export default function Chat() {
 
   return (
     <div className="flex flex-col min-h-screen">
-      {/* Navigation */}
       <header className="border-b">
         <div className="container flex h-16 items-center justify-between px-4 md:px-6">
           <div className="flex items-center gap-4">
@@ -73,9 +64,7 @@ export default function Chat() {
       </header>
 
       <main className="flex flex-1 overflow-hidden">
-        {/* Chat Area */}
         <div className="flex-1 flex flex-col">
-          {/* Messages */}
           <ScrollArea className="flex-1 p-4">
             <div className="w-full space-y-4">
               {messages.map((message, index) => (
@@ -157,7 +146,6 @@ export default function Chat() {
             </div>
           </ScrollArea>
 
-          {/* Input */}
           <div className="border-t bg-white p-4">
             <form
               onSubmit={(event) => {
@@ -191,7 +179,7 @@ export default function Chat() {
                   type="submit"
                   size="icon"
                   className="h-12 w-12 shrink-0 bg-teal-600 hover:bg-teal-700"
-                  disabled={isLoading || !input.trim()}
+                  disabled={!input.trim()}
                 >
                   <Send className="h-5 w-5" />
                   <span className="sr-only">Send message</span>
@@ -204,7 +192,6 @@ export default function Chat() {
           </div>
         </div>
 
-        {/* Sidebar - Medical Reports */}
         <div
           className={`border-l bg-gray-50 w-full md:w-80 lg:w-96 shrink-0 overflow-auto transition-all duration-300 ease-in-out ${
             showSidebar ? "translate-x-0" : "translate-x-full md:translate-x-0"
